@@ -151,7 +151,7 @@ export function SignalScene({ compact = false }: { compact?: boolean }) {
           className="signal-sculpture"
           src={
             compact
-              ? "/brand/sboritm-mark-512.webp"
+              ? "/brand/mayak-mark-512.webp"
               : "/brand/signal-sculpture.webp"
           }
           width={compact ? 512 : 1600}

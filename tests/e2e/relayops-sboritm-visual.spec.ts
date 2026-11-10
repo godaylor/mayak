@@ -36,7 +36,7 @@ type AxeWindow = Window & {
   };
 };
 
-test("Sboritm final visual matrix, real motion, responsive states and navigation", async ({
+test("Mayak final visual matrix, real motion, responsive states and navigation", async ({
   browser,
   baseURL,
 }) => {
@@ -485,7 +485,7 @@ test("Sboritm final visual matrix, real motion, responsive states and navigation
       await state.reload();
       await expect(
         state.getByRole("heading", {
-          name: "Сборитм временно недоступен",
+          name: "Маяк временно недоступен",
           exact: true,
         }),
       ).toBeVisible({ timeout: 20_000 });
@@ -504,7 +504,7 @@ test("Sboritm final visual matrix, real motion, responsive states and navigation
         locale: "ru-RU",
         viewport: { width: 1440, height: 960 },
         recordVideo: {
-          dir: ".local/sboritm-motion",
+          dir: ".local/mayak-motion",
           size: { width: 1440, height: 960 },
         },
         storageState: {

@@ -1,8 +1,8 @@
-# RelayOps
+# Маяк
 
-[![CI](https://github.com/godaylor/relayops/actions/workflows/ci.yml/badge.svg)](https://github.com/godaylor/relayops/actions/workflows/ci.yml) [![Security](https://github.com/godaylor/relayops/actions/workflows/security.yml/badge.svg)](https://github.com/godaylor/relayops/actions/workflows/security.yml)
+[![CI](https://github.com/godaylor/mayak/actions/workflows/ci.yml/badge.svg)](https://github.com/godaylor/mayak/actions/workflows/ci.yml) [![Security](https://github.com/godaylor/mayak/actions/workflows/security.yml/badge.svg)](https://github.com/godaylor/mayak/actions/workflows/security.yml)
 
-RelayOps — self-hosted платформа для операционного реагирования на инциденты в реальном времени. Продукт строится вокруг модели **Service → Signal → Incident → неизменяемая Timeline** и сохраняет PostgreSQL как источник истины, Hono API как границу авторизации и WebSocket-события как механизм актуализации клиентов.
+Маяк — self-hosted платформа для операционного реагирования на инциденты в реальном времени. Продукт строится вокруг модели **Service → Signal → Incident → неизменяемая Timeline** и сохраняет PostgreSQL как источник истины, Hono API как границу авторизации и WebSocket-события как механизм актуализации клиентов.
 
 Русский язык используется по умолчанию. Публичный переключатель `RU / EN` переводит пользовательский интерфейс целиком и сохраняет выбор после перезагрузки.
 
@@ -10,7 +10,7 @@ RelayOps — self-hosted платформа для операционного р
 
 Локальная версия для демонстрации в портфолио готова: основные сценарии, русский интерфейс, переключение EN и релизная сборка проверены. Продукт предназначен для некоммерческого portfolio/demo release. Владелец явно разрешил demo-публикацию с отложенной ручной NVDA/VoiceOver-проверкой; статус публикации и оставшиеся проверки перечислены в [RELEASE_PREFLIGHT.md](RELEASE_PREFLIGHT.md), этапы — в [PLAN.md](PLAN.md).
 
-## Что входит в RelayOps
+## Что входит в Маяк
 
 - Создание обычного инцидента из любого рабочего экрана: сервис, название, severity, описание; безопасный повтор после сетевой ошибки;
 - Operations Overview с live incident clock rail;
@@ -32,7 +32,7 @@ RelayOps — self-hosted платформа для операционного р
 
 React, TypeScript, Vite, Tailwind CSS, Base UI/coss и сохранённые Radix-компоненты, TanStack Router/Query, dnd-kit, Framer Motion, Tiptap, i18next; Node.js, Hono, Zod/OpenAPI, Better Auth, Drizzle ORM, PostgreSQL, WebSockets и транзакционный outbox. Redis, S3, SMTP и внешние интеграции опциональны. Статическая информационная страница использует Next.js. Сборка — pnpm/Turborepo; проверки — Vitest, Playwright, axe, Biome, Gitleaks, CodeQL и pnpm audit; deployment — Docker Compose, Nginx и Caddy, альтернативно Coolify/Helm.
 
-Новый incident-domain, timeline/outbox, workbench, board, service/signal flows и analytics составляют собственную работу RelayOps. Auth/workspace infrastructure, часть UI, интеграции и legacy runtime унаследованы от Kaneo и сохраняют его MIT attribution. Проект не заявляется полностью написанным с нуля.
+Новый incident-domain, timeline/outbox, workbench, board, service/signal flows и analytics составляют собственную работу Маяк. Auth/workspace infrastructure, часть UI, интеграции и legacy runtime унаследованы от Kaneo и сохраняют его MIT attribution. Проект не заявляется полностью написанным с нуля.
 
 ## Рабочее приложение в интернете
 
@@ -61,7 +61,7 @@ Render Free + Neon Free, Frankfurt. Публичный сценарий созд
 
 GitHub Actions запускают lint, i18n, typecheck, unit/integration tests, production build, Docker build, Gitleaks, CodeQL и dependency review. Публикационные workflow fail-closed: они не работают в `usekaneo/kaneo` и требуют repository variables `RELAYOPS_PUBLISH_ENABLED=true` и `RELAYOPS_RELEASE_APPROVED=true`.
 
-Статическая RU/EN portfolio-страница из `apps/site` публикуется бесплатно через GitHub Pages. Workflow автоматически учитывает подпуть project Pages (`/<repository>/`) и не выдаёт локальный runtime за публичное приложение. Если приложение действительно развернуто отдельно, задайте repository variable `RELAYOPS_APP_URL` его публичным HTTPS URL. Сам RelayOps runtime требует PostgreSQL и публикуется отдельно через Docker/Compose или Helm; GitHub Pages размещает только статическое портфолио.
+Статическая RU/EN portfolio-страница из `apps/site` публикуется бесплатно через GitHub Pages. Workflow автоматически учитывает подпуть project Pages (`/<repository>/`) и не выдаёт локальный runtime за публичное приложение. Если приложение действительно развернуто отдельно, задайте repository variable `RELAYOPS_APP_URL` его публичным HTTPS URL. Сам Маяк runtime требует PostgreSQL и публикуется отдельно через Docker/Compose или Helm; GitHub Pages размещает только статическое портфолио.
 
 Публичное demo: [godaylor.github.io/relayops](https://godaylor.github.io/relayops/).
 
@@ -85,8 +85,8 @@ GitHub Actions запускают lint, i18n, typecheck, unit/integration tests,
 
 ## Происхождение и лицензия
 
-RelayOps создан на основе [Kaneo](https://github.com/usekaneo/kaneo), разработанного Andrej Acevski и сообществом Kaneo. Этот проект не является официальным продуктом Kaneo и не имеет официального одобрения Kaneo.
+Маяк создан на основе [Kaneo](https://github.com/usekaneo/kaneo), разработанного Andrej Acevski и сообществом Kaneo. Этот проект не является официальным продуктом Kaneo и не имеет официального одобрения Kaneo.
 
-Исходные части Kaneo сохраняют MIT-лицензию и авторское уведомление исходного проекта — см. [LICENSE](LICENSE). Новый код, документация и source-defined brand assets RelayOps принадлежат Maxeem и доступны по отдельной [MIT-лицензии RelayOps](LICENSE-RELAYOPS). Граница авторства и обязательные ссылки собраны в [NOTICE](NOTICE), а сведения о сторонних компонентах и шрифтах — в [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES). Эти файлы входят в генерируемые artifact-level inventories.
+Исходные части Kaneo сохраняют MIT-лицензию и авторское уведомление исходного проекта — см. [LICENSE](LICENSE). Новый код, документация и source-defined brand assets Маяк принадлежат Maxeem и доступны по отдельной [MIT-лицензии Маяк](LICENSE-RELAYOPS). Граница авторства и обязательные ссылки собраны в [NOTICE](NOTICE), а сведения о сторонних компонентах и шрифтах — в [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES). Эти файлы входят в генерируемые artifact-level inventories.
 
-Публичное имя RelayOps утверждено владельцем этого репозитория для некоммерческого portfolio/demo release. Это утверждение не означает, что была проведена формальная юридическая проверка товарного знака или домена.
+Публичное имя Маяк утверждено владельцем этого репозитория для некоммерческого portfolio/demo release. Это утверждение не означает, что была проведена формальная юридическая проверка товарного знака или домена.

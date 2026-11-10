@@ -1,4 +1,4 @@
-/* Сборитм: one response surface, with signal as the visual and motion language. */
+/* Маяк: one response surface, with signal as the visual and motion language. */
 .sbor-app, .sbor-auth, .relay-dialog, .relay-onboarding {
   --sb-bg: #f5f4fb; --sb-surface: #fff; --sb-soft: #eeedf8; --sb-ink: #1b1d36;
   --sb-muted: #64677d; --sb-line: #e4e3ef; --sb-accent: #5d4bda; --sb-accent-soft: #eeebff;
@@ -19,15 +19,15 @@
   --primary: #a99aff; --primary-foreground: #17132c; --muted: #262842; --muted-foreground: #a4a6bf;
   --border: #2c2e4b; --input: #3b3d5b; --accent: #2b294c; --accent-foreground: #c1b5ff; --ring: #a99aff;
 }
-.sboritm-wordmark { display: inline-flex; align-items: center; gap: 11px; font-size: 25px; font-weight: 650; letter-spacing: -1.1px; }
-.sboritm-brand-mark { object-fit: contain; flex-shrink: 0; }
-.sboritm-wordmark .sboritm-brand-mark { width: 46px; height: 46px; }
+.mayak-wordmark { display: inline-flex; align-items: center; gap: 11px; font-size: 25px; font-weight: 650; letter-spacing: -1.1px; }
+.mayak-brand-mark { object-fit: contain; flex-shrink: 0; }
+.mayak-wordmark .mayak-brand-mark { width: 46px; height: 46px; }
 .sbor-eyebrow { display: flex; align-items: center; gap: 9px; font-size: 11px; font-weight: 650; letter-spacing: .15em; text-transform: uppercase; }
 .signal-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #60d8b3; flex-shrink: 0; box-shadow: 0 0 0 3px #60d8b312; }
 [data-relayops-shell].sbor-app { display: flex; width: 100%; height: 100%; min-width: 0; overflow: hidden; background: var(--sb-bg); color: var(--sb-ink); --muted-foreground: var(--sb-muted); }
 .sbor-sidebar { position: relative; z-index: 30; display: flex; flex-direction: column; flex-shrink: 0; width: 216px; padding: 28px 15px 20px; background: #111229; color: #c3c3dc; border-right: 1px solid #ffffff06; }
 .sbor-brand-link { display: block; color: #f6f4ff; margin: 0 10px 38px; }
-.sbor-brand-link .sboritm-wordmark { font-size: 25px; }
+.sbor-brand-link .mayak-wordmark { font-size: 25px; }
 .sbor-sidebar-caption { margin: 0 15px 14px; text-transform: uppercase; letter-spacing: .15em; font: 9px var(--font-mono); color: #8589aa; }
 .sbor-navigation { display: grid; gap: 7px; }
 .sbor-navigation a { display: flex; position: relative; align-items: center; gap: 12px; min-height: 46px; padding: 12px 15px; border-radius: 10px; color: #a2a5c3; font-size: 13px; font-weight: 450; isolation: isolate; transition: color 150ms var(--ease-out); }
@@ -190,7 +190,7 @@
  .sbor-live-ribbon { display: none; }
  .sbor-topbar-actions { gap: 14px; }
  .sbor-mobile-sidebar { background: #111229; color: #ecebff; max-width: 300px; padding: 28px 20px; gap: 34px; }
- .sbor-mobile-sidebar > .sboritm-wordmark { margin-bottom: 5px; }
+ .sbor-mobile-sidebar > .mayak-wordmark { margin-bottom: 5px; }
  .sbor-mobile-sidebar > section { padding: 0; }
  .sbor-main { padding-top: 24px; }
  .sbor-auth-grid { grid-template-columns: 1fr 1fr; gap: 36px; padding-inline: 24px; }
@@ -217,8 +217,8 @@
  .sbor-footer { padding: 16px; font-size: 11px; line-height: 1.7; }
  .sbor-skip { left: 16px; }
  .sbor-auth-header { padding: 18px 20px; }
- .sbor-auth-header .sboritm-wordmark { font-size: 22px; gap: 7px; }
- .sbor-auth-header .sboritm-wordmark .sboritm-brand-mark { width: 37px; height: 37px; }
+ .sbor-auth-header .mayak-wordmark { font-size: 22px; gap: 7px; }
+ .sbor-auth-header .mayak-wordmark .mayak-brand-mark { width: 37px; height: 37px; }
  .sbor-auth-preferences { gap: 12px; }
  .sbor-auth-grid { display: flex; flex-direction: column; gap: 36px; padding: 0 16px 30px; }
  .sbor-auth-hero { width: 100%; min-height: 350px; border-radius: 18px; }

@@ -14,7 +14,7 @@ for (const size of [128, 256, 512]) {
   await sharp(source)
     .resize(size, size)
     .webp({ quality: 90, alphaQuality: 100 })
-    .toFile(resolve(publicDir, "brand", "sboritm-mark-" + size + ".webp"));
+    .toFile(resolve(publicDir, "brand", "mayak-mark-" + size + ".webp"));
 }
 for (const [name, size] of Object.entries({
   "apple-touch-icon.png": 180,
@@ -41,7 +41,7 @@ const svg =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><image width="128" height="128" href="data:image/png;base64,' +
   svgPng.toString("base64") +
   '"/></svg>\n';
-for (const target of ["favicon.svg", "brand/sboritm-mark.svg"]) {
+for (const target of ["favicon.svg", "brand/mayak-mark.svg"]) {
   writeFileSync(resolve(publicDir, target), svg);
 }
-console.log("Sboritm artwork, transparent marks and favicons generated.");
+console.log("Mayak artwork, transparent marks and favicons generated.");

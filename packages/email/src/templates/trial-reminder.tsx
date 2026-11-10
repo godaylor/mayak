@@ -43,13 +43,13 @@ const TrialReminderEmail = ({
           Choose a plan
         </Link>
         <Text style={styles.paragraph}>
-          Сборитм is also free forever if you host it yourself, with every
+          Маяк is also free forever if you host it yourself, with every
           feature included. You can export your data at any time and move it to
           your own server.
         </Text>
         <Section style={styles.divider} />
         <Text style={styles.footer}>
-          You are receiving this because you own this workspace on Сборитм
+          You are receiving this because you own this workspace on Маяк
           Cloud.
         </Text>
       </Section>

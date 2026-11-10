@@ -3,8 +3,8 @@
 		"eyebrow": "Self-hosted incident operations",
 		"title": "One incident.\nOne shared picture.",
 		"intro": "Keep services, incoming signals and response decisions together. A durable timeline gives the next responder the context to continue.",
-		"open": "Open local Сборитм",
-		"local": "Static portfolio demo is published on GitHub Pages. The live Сборитм runtime is not publicly hosted.",
+		"open": "Open local Маяк",
+		"local": "Static portfolio demo is published on GitHub Pages. The live Маяк runtime is not publicly hosted.",
 		"flow": "From observation to resolution",
 		"service": "Service",
 		"signal": "Signal",
@@ -25,13 +25,13 @@
 		"analyticsText": "MTTA, MTTR, explicit samples and links back to the incidents.",
 		"architecture": "PostgreSQL is the record. Realtime keeps the team current.",
 		"architectureText": "A single instance runs without Redis. Existing Kaneo data remains in an explicit read-only archive; incidents are a separate domain.",
-		"provenance": "Derived from the MIT-licensed Kaneo project. Original copyright: Andrej Acevski. Сборитм is an independent fork and is not endorsed by Kaneo.",
+		"provenance": "Derived from the MIT-licensed Kaneo project. Original copyright: Andrej Acevski. Маяк is an independent fork and is not endorsed by Kaneo.",
 		"licenses": "Licenses and notices",
 		"upstream": "Upstream Kaneo",
 		"language": "Language"
 	},
 	"common": {
-		"appName": "Сборитм",
+		"appName": "Маяк",
 		"actions": {
 			"cancel": "Cancel",
 			"close": "Close",
@@ -250,7 +250,7 @@
 			"toggleMessage": "Already have an account?",
 			"toggleLink": "Sign in",
 			"instanceStatusError": "Couldn't reach the server. Please retry in a moment.",
-			"instanceAdminTitle": "Set up your Сборитм instance",
+			"instanceAdminTitle": "Set up your Маяк instance",
 			"instanceAdminSubtitle": "This account becomes the instance administrator with full access."
 		},
 		"verifyOtp": {
@@ -308,7 +308,7 @@
 			"workspaceLabel": "Workspace: {{workspaceName}}",
 			"joinWorkspace": "Join {{workspaceName}}",
 			"inviteBodySignedIn": "<inviter>{{inviterName}}</inviter> has invited you to join their workspace.",
-			"inviteBodySignedOut": "<inviter>{{inviterName}}</inviter> has invited you to join their workspace on Сборитм.",
+			"inviteBodySignedOut": "<inviter>{{inviterName}}</inviter> has invited you to join their workspace on Маяк.",
 			"createAccountOrSignIn": "Create an account to accept this invitation, or sign in if you already have one.",
 			"createAccount": "Create Account",
 			"accepting": "Accepting...",
@@ -324,7 +324,7 @@
 			}
 		},
 		"onboarding": {
-			"pageTitle": "Welcome to Сборитм",
+			"pageTitle": "Welcome to Маяк",
 			"workspacePageTitle": "Create Workspace",
 			"createWorkspaceTitle": "Create workspace",
 			"createWorkspaceSubtitle": "Set up your workspace to coordinate incident response",
@@ -416,7 +416,7 @@
 		"notificationsPage": {
 			"pageTitle": "Notifications",
 			"title": "Notifications",
-			"subtitle": "Choose how Сборитм delivers your account notifications and which channels to use.",
+			"subtitle": "Choose how Маяк delivers your account notifications and which channels to use.",
 			"statusConnected": "Connected",
 			"statusPaused": "Paused",
 			"emailTitle": "Email",
@@ -452,7 +452,7 @@
 			"webhookUrlPlaceholder": "https://example.com/webhooks/relayops",
 			"webhookSecretPlaceholder": "Optional shared secret",
 			"webhookSecretHintConfigured": "A signing secret is already configured ({{masked}}). Enter a new one to replace it.",
-			"webhookSecretHintOptional": "Optional. Сборитм signs the request body when a secret is set.",
+			"webhookSecretHintOptional": "Optional. Маяк signs the request body when a secret is set.",
 			"connectWebhook": "Connect webhook",
 			"workspaceRulesTitle": "Workspace delivery rules",
 			"workspaceRulesDescription": "Reuse your global channels, then decide which workspaces and projects are allowed to send account notifications.",
@@ -517,7 +517,7 @@
 		},
 		"preferencesPage": {
 			"title": "Preferences",
-			"subtitle": "Customize your Сборитм experience.",
+			"subtitle": "Customize your Маяк experience.",
 			"appearanceTitle": "Appearance",
 			"appearanceSubtitle": "Visual settings and layout preferences.",
 			"theme": "Theme",
@@ -561,7 +561,7 @@
 			"title": "Developer Settings",
 			"subtitle": "Manage your API keys and developer resources.",
 			"apiKeysCardTitle": "API Keys",
-			"apiKeysCardDescription": "Create and manage API keys for programmatic access to Сборитм.",
+			"apiKeysCardDescription": "Create and manage API keys for programmatic access to Маяк.",
 			"createApiKey": "Create API Key",
 			"unnamedKey": "Unnamed Key"
 		},
@@ -600,7 +600,7 @@
 			},
 			"createDialog": {
 				"title": "Create API Key",
-				"description": "Create a new API key to access the Сборитм API programmatically.",
+				"description": "Create a new API key to access the Маяк API programmatically.",
 				"nameLabel": "Name",
 				"namePlaceholder": "My API Key",
 				"nameDescription": "A descriptive name for this API key",
@@ -954,7 +954,7 @@
 				"removeError": "Failed to remove GitHub integration",
 				"issuesImported": "Issues imported successfully",
 				"importError": "Failed to import issues",
-				"commentOnEnabled": "Сборитм will comment with a task link on new issues",
+				"commentOnEnabled": "Маяк will comment with a task link on new issues",
 				"commentOnDisabled": "Task link comments on new issues are turned off",
 				"settingsUpdateError": "Failed to update GitHub integration"
 			},
@@ -965,8 +965,8 @@
 			"badgeNotConnected": "Not Connected",
 			"repository": "Repository",
 			"repositoryHint": "Connected GitHub repository",
-			"commentTaskLinkTitle": "Comment Сборитм link on new issues",
-			"commentTaskLinkHint": "When enabled, Сборитм posts a comment on each new GitHub issue with a link to the task.",
+			"commentTaskLinkTitle": "Comment Маяк link on new issues",
+			"commentTaskLinkHint": "When enabled, Маяк posts a comment on each new GitHub issue with a link to the task.",
 			"appStatusTitle": "GitHub App Status",
 			"appStatusHint": "Installation and permissions status",
 			"statusProperlyConfigured": "Properly configured",
@@ -1019,7 +1019,7 @@
 				"removeError": "Failed to remove Gitea integration",
 				"issuesImported": "Issues imported successfully",
 				"importError": "Failed to import issues",
-				"commentOnEnabled": "Сборитм will comment with a task link on new issues",
+				"commentOnEnabled": "Маяк will comment with a task link on new issues",
 				"commentOnDisabled": "Task link comments on new issues are turned off",
 				"settingsUpdateError": "Failed to update Gitea integration",
 				"secretCopied": "Copied",
@@ -1035,8 +1035,8 @@
 			"badgeNotConnected": "Not connected",
 			"repository": "Repository",
 			"repositoryHint": "Linked Gitea repository",
-			"commentTaskLinkTitle": "Comment Сборитм link on new issues",
-			"commentTaskLinkHint": "When enabled, Сборитм posts a comment on each new issue with a link to the task.",
+			"commentTaskLinkTitle": "Comment Маяк link on new issues",
+			"commentTaskLinkHint": "When enabled, Маяк posts a comment on each new issue with a link to the task.",
 			"webhookTitle": "Webhook",
 			"webhookHint": "In your Gitea repository, add a webhook with this URL and secret. Enable push, pull request, issues, issue comments, and create (for labels).",
 			"webhookSecretLabel": "Secret (must match the webhook secret in Gitea)",
@@ -1160,15 +1160,15 @@
 				"removeError": "Failed to remove generic webhook integration"
 			},
 			"connectionTitle": "Outgoing webhook connection",
-			"connectionHint": "Send task events to your own endpoint as JSON. A signed X-Сборитм-Signature header is included when a secret is configured.",
+			"connectionHint": "Send task events to your own endpoint as JSON. A signed X-Маяк-Signature header is included when a secret is configured.",
 			"connected": "Connected",
 			"paused": "Paused",
 			"webhookLabel": "Endpoint URL",
 			"webhookPlaceholder": "https://example.com/webhooks/relayops",
-			"webhookHint": "Сборитм sends POST requests with a JSON payload for each enabled event.",
+			"webhookHint": "Маяк sends POST requests with a JSON payload for each enabled event.",
 			"secretLabel": "Signing secret",
 			"secretPlaceholder": "Optional shared secret",
-			"secretHint": "Optional. If provided, Сборитм signs the request body and sends the hex digest in the X-Сборитм-Signature header.",
+			"secretHint": "Optional. If provided, Маяк signs the request body and sends the hex digest in the X-Маяк-Signature header.",
 			"secretHintConfigured": "A signing secret is already configured ({{secret}}). Enter a new one to replace it.",
 			"eventsTitle": "Event notifications",
 			"eventsHint": "Choose which project changes should trigger outgoing webhooks.",
@@ -1222,7 +1222,7 @@
 			"threadIdHint": "Optional. Use this for forum topics inside Telegram groups.",
 			"chatLabelLabel": "Chat label",
 			"chatLabelPlaceholder": "Engineering Updates",
-			"chatLabelHint": "Optional label for your reference inside Сборитм.",
+			"chatLabelHint": "Optional label for your reference inside Маяк.",
 			"eventsTitle": "Event notifications",
 			"eventsHint": "Choose which project changes should post to Telegram.",
 			"events": {
@@ -2012,14 +2012,14 @@
 	},
 	"invitations": {
 		"email": {
-			"subject": "{{inviterName}} invited you to join {{workspaceName}} on Сборитм",
-			"preview": "You're invited to {{workspaceName}} on Сборитм",
+			"subject": "{{inviterName}} invited you to join {{workspaceName}} on Маяк",
+			"preview": "You're invited to {{workspaceName}} on Маяк",
 			"title": "Join {{workspaceName}}",
-			"subtitle": "{{inviterName}} ({{inviterEmail}}) invited you to collaborate in Сборитм.",
+			"subtitle": "{{inviterName}} ({{inviterEmail}}) invited you to collaborate in Маяк.",
 			"cta": "Accept invitation",
 			"sameEmail": "You can accept with the same email that received this message.",
 			"ignore": "If this wasn't expected, you can safely ignore this email.",
-			"footer": "Сборитм workspace invitation"
+			"footer": "Маяк workspace invitation"
 		},
 		"pageTitle": "Invitations",
 		"pendingInvitations": "Pending Invitations",
@@ -2155,13 +2155,13 @@
 	},
 	"billing": {
 		"title": "Billing",
-		"disabled": "Billing isn't enabled on this instance. Self-hosted Сборитм includes every feature, free forever.",
-		"description": "Manage the Сборитм Cloud subscription for this workspace.",
+		"disabled": "Billing isn't enabled on this instance. Self-hosted Маяк includes every feature, free forever.",
+		"description": "Manage the Маяк Cloud subscription for this workspace.",
 		"currentPlan": "Current plan",
 		"currentPlanSubtitle": "Your workspace's active plan and billing status.",
 		"foundingFree": "Founding Free",
 		"free": "Free",
-		"foundingDescription": "This workspace has free access to Сборитм Cloud as an early supporter. Thank you for being here from the start.",
+		"foundingDescription": "This workspace has free access to Маяк Cloud as an early supporter. Thank you for being here from the start.",
 		"accessEnds": "Access ends",
 		"renews": "Renews",
 		"manageDescription": "Update payment method, view invoices, or cancel anytime.",
@@ -2241,7 +2241,7 @@
 			"loading": "Loading request…",
 			"checking": "Checking the authorization request.",
 			"signInSubtitle": "Sign in before approving this MCP client.",
-			"reviewSubtitle": "Review this request before granting access to your Сборитм account.",
+			"reviewSubtitle": "Review this request before granting access to your Маяк account.",
 			"warning": "This client will be able to act as you and access your workspaces. Only continue if you initiated this connection.",
 			"clientName": "Client name (self-reported)",
 			"defaultClient": "MCP client",
@@ -2257,12 +2257,12 @@
 			"connected": "Device connected",
 			"denyError": "Could not deny",
 			"cancelled": "Request cancelled",
-			"subtitle": "A device is requesting access to your Сборитм account."
+			"subtitle": "A device is requesting access to your Маяк account."
 		}
 	},
 	"relayops": {
 		"brand": {
-			"name": "Сборитм",
+			"name": "Маяк",
 			"category": "Incident response, in sync",
 			"promise": "From the first signal to a shared outcome",
 			"heroTitle": "Signal received.\nTeam, together.",
@@ -2321,11 +2321,11 @@
 			"filters": "Filters and table options",
 			"connectionHelp": "If the app takes a while to load"
 		},
-		"pageTitle": "Сборитм — service issues",
+		"pageTitle": "Маяк — service issues",
 		"tracerLabel": "Production vertical tracer",
-		"entry": "Open Сборитм",
+		"entry": "Open Маяк",
 		"back": "Back to workspace",
-		"createPanel": "Create Сборитм records",
+		"createPanel": "Create Маяк records",
 		"creating": "Creating...",
 		"service": {
 			"title": "1 · Service",
@@ -2403,7 +2403,7 @@
 		"skipToContent": "Skip to main content",
 		"shell": {
 			"subtitle": "Service issue response",
-			"provenance": "Сборитм is derived from the MIT-licensed Kaneo project and is not officially endorsed by Kaneo."
+			"provenance": "Маяк is derived from the MIT-licensed Kaneo project and is not officially endorsed by Kaneo."
 		},
 		"nav": {
 			"primary": "Primary navigation",
@@ -2436,22 +2436,22 @@
 			"openIncident": "Open {{key}}: {{title}}, {{severity}}, {{status}}, elapsed {{elapsed}}"
 		},
 		"activation": {
-			"pageTitle": "Activate Сборитм",
+			"pageTitle": "Activate Маяк",
 			"eyebrow": "EXPLICIT PRODUCT ROLLOUT",
-			"title": "Move this workspace to Сборитм",
-			"description": "Сборитм becomes the primary experience. Existing Сборитм projects and tasks remain intact in a read-only archive with JSON export.",
+			"title": "Move this workspace to Маяк",
+			"description": "Маяк becomes the primary experience. Existing Маяк projects and tasks remain intact in a read-only archive with JSON export.",
 			"legacyNotice": "{{projects}} projects and {{tasks}} tasks will be preserved. No records are converted or deleted.",
-			"submit": "Activate Сборитм",
+			"submit": "Activate Маяк",
 			"activating": "Activating...",
 			"keepLegacy": "Keep legacy workspace",
-			"adminRequired": "A workspace administrator must activate Сборитм.",
-			"error": "Сборитм could not be activated. Try again."
+			"adminRequired": "A workspace administrator must activate Маяк.",
+			"error": "Маяк could not be activated. Try again."
 		},
 		"states": {
-			"loading": "Loading Сборитм",
+			"loading": "Loading Маяк",
 			"deniedTitle": "Access denied",
 			"deniedDescription": "You do not have permission to view this workspace resource.",
-			"retryableTitle": "Сборитм is temporarily unavailable",
+			"retryableTitle": "Маяк is temporarily unavailable",
 			"retryableDescription": "The request can be retried without losing any work.",
 			"unrecoverableTitle": "This resource cannot be opened",
 			"unrecoverableDescription": "The server returned status {{status}}. Check the link or contact a workspace administrator.",
@@ -2460,13 +2460,13 @@
 		"onboarding": {
 			"eyebrow": "GUIDED SETUP",
 			"title": "Add your first service",
-			"createWorkspace": "Create Сборитм workspace",
+			"createWorkspace": "Create Маяк workspace",
 			"stepWorkspace": "Workspace",
 			"stepService": "First service",
 			"stepIncident": "Demo incident",
 			"serviceTitle": "Define the system your team operates",
 			"serviceDescription": "For example, your store checkout. Use a short identifier such as checkout-api. This records a service; it does not connect monitoring automatically.",
-			"serviceDenied": "You can view Сборитм, but you do not have permission to create a Service.",
+			"serviceDenied": "You can view Маяк, but you do not have permission to create a Service.",
 			"createService": "Create first service",
 			"serviceReady": "{{name}} is ready",
 			"demoDescription": "Optionally create a marked training incident. It is saved on the server and can be removed separately from real work.",
@@ -2514,7 +2514,7 @@
 			"all": "All services",
 			"apply": "Apply",
 			"emptyTitle": "No services yet",
-			"emptyDescription": "Create the first Service to start operating in Сборитм.",
+			"emptyDescription": "Create the first Service to start operating in Маяк.",
 			"filteredEmptyTitle": "No services match these filters",
 			"filteredEmptyDescription": "Change the search or archive filter to see more services.",
 			"clearFilters": "Clear filters",
@@ -2542,7 +2542,7 @@
 			"description": "{{count}} marked demo Incident is available for training.",
 			"remove": "Remove demo data",
 			"confirmTitle": "Remove all marked demo data?",
-			"confirmDescription": "Only records carrying the Сборитм demo provenance marker are deleted. User-created data is preserved.",
+			"confirmDescription": "Only records carrying the Маяк demo provenance marker are deleted. User-created data is preserved.",
 			"cancel": "Keep demo data",
 			"confirm": "Remove marked data"
 		},
@@ -2659,13 +2659,13 @@
 			"technicalTitle": "Access rules and archived data"
 		},
 		"legacy": {
-			"title": "Legacy Сборитм archive",
+			"title": "Legacy Маяк archive",
 			"readOnly": "Read-only",
-			"description": "Existing projects and tasks are preserved unchanged. Сборитм does not convert, dual-write or delete them.",
+			"description": "Existing projects and tasks are preserved unchanged. Маяк does not convert, dual-write or delete them.",
 			"export": "Export JSON",
 			"exportError": "The legacy export could not be prepared.",
 			"emptyTitle": "No legacy records",
-			"emptyDescription": "This workspace did not contain Сборитм projects or tasks.",
+			"emptyDescription": "This workspace did not contain Маяк projects or tasks.",
 			"taskCount_one": "{{count}} task",
 			"taskCount_other": "{{count}} tasks"
 		},

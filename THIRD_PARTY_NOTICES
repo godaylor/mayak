@@ -30,7 +30,7 @@ adapter implements the provider's documented HTTP/signature protocols.
 It is not copied from that SDK. No real billing provider was exercised.
 
 Kaneo-era marketing screenshots, badges and claims are not assets of the
-RelayOps application. The current Russian product brand is Sboritm (Сборитм).
+RelayOps application. The current Russian product brand is Mayak (Маяк).
 Its original glass sculpture and transparent logo were generated with OpenAI
 imagegen for this project. The same image is used by the UI, brand assets and
 favicons, optimized by scripts/release/brand.mjs. Their source and prompts

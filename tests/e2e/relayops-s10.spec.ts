@@ -107,7 +107,7 @@ async function onboardAdmin(page: Page) {
   await page.locator('input[name="password"]').fill("RelayOps-password-123!");
   await page.getByRole("button", { name: "Create Account" }).click();
   await page.getByLabel("Workspace Name").fill(`RelayOps ${suffix}`);
-  await page.getByRole("button", { name: "Create Сборитм workspace" }).click();
+  await page.getByRole("button", { name: "Create Маяк workspace" }).click();
   await page.getByLabel("Service name").fill("Checkout API");
   await page.getByLabel("Service identifier").fill(`checkout-${suffix}`);
   await page.getByRole("button", { name: "Create first service" }).click();

@@ -37,7 +37,7 @@ describe("RelayOps route states", () => {
       </I18nextProvider>,
     );
     expect(
-      screen.getByRole("status", { name: "Loading Сборитм" }),
+      screen.getByRole("status", { name: "Loading Маяк" }),
     ).toBeInTheDocument();
   });
 

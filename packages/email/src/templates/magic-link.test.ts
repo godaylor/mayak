@@ -11,7 +11,7 @@ describe("MagicLinkEmail", () => {
         locale: "ja-JP",
       }),
     );
-    expect(html).toContain("Сборитм にサインイン");
-    expect(html).toContain("Сборитм セキュリティメール");
+    expect(html).toContain("Маяк にサインイン");
+    expect(html).toContain("Маяк セキュリティメール");
   });
 });

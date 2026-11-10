@@ -15,29 +15,29 @@ export type NotificationEmailProps = {
 
 const messages = {
   en: {
-    preview: "You have a new Сборитм notification",
+    preview: "You have a new Маяк notification",
     subtitle: "A notification matched your delivery preferences.",
-    footer: "Сборитм notification",
-    actionLabel: "Open in Сборитм",
+    footer: "Маяк notification",
+    actionLabel: "Open in Маяк",
   },
   de: {
-    preview: "Du hast eine neue Сборитм-Benachrichtigung",
+    preview: "Du hast eine neue Маяк-Benachrichtigung",
     subtitle:
       "Eine Benachrichtigung entspricht deinen Zustellungs-Einstellungen.",
-    footer: "Сборитм-Benachrichtigung",
-    actionLabel: "In Сборитм oeffnen",
+    footer: "Маяк-Benachrichtigung",
+    actionLabel: "In Маяк oeffnen",
   },
   vi: {
-    preview: "Bạn có thông báo mới từ Сборитм",
+    preview: "Bạn có thông báo mới từ Маяк",
     subtitle: "Một thông báo khớp với tùy chọn nhận thông báo của bạn.",
-    footer: "Thông báo Сборитм",
-    actionLabel: "Mở trong Сборитм",
+    footer: "Thông báo Маяк",
+    actionLabel: "Mở trong Маяк",
   },
   ja: {
-    preview: "Сборитм の新しい通知",
+    preview: "Маяк の新しい通知",
     subtitle: "配信設定に一致する通知がありました。",
-    footer: "Сборитм 通知",
-    actionLabel: "Сборитм で開く",
+    footer: "Маяк 通知",
+    actionLabel: "Маяк で開く",
   },
 } as const;
 

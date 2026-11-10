@@ -28,15 +28,15 @@ export type WorkspaceInvitationEmailCopy = {
 // tsc, so the import would survive into dist and resolve outside the published
 // files at runtime.
 const DEFAULT_COPY: WorkspaceInvitationEmailCopy = {
-  subject: "{{inviterName}} invited you to join {{workspaceName}} on Сборитм",
-  preview: "You're invited to {{workspaceName}} on Сборитм",
+  subject: "{{inviterName}} invited you to join {{workspaceName}} on Маяк",
+  preview: "You're invited to {{workspaceName}} on Маяк",
   title: "Join {{workspaceName}}",
   subtitle:
-    "{{inviterName}} ({{inviterEmail}}) invited you to collaborate in Сборитм.",
+    "{{inviterName}} ({{inviterEmail}}) invited you to collaborate in Маяк.",
   cta: "Accept invitation",
   sameEmail: "You can accept with the same email that received this message.",
   ignore: "If this wasn't expected, you can safely ignore this email.",
-  footer: "Сборитм workspace invitation",
+  footer: "Маяк workspace invitation",
 };
 
 function interpolate(template: string, values: Record<string, string>) {
@@ -81,15 +81,15 @@ WorkspaceInvitationEmail.PreviewProps = {
   invitationLink: "https://relayops.example/invite/abc123",
   to: "invitee@example.com",
   copy: {
-    subject: "{{inviterName}} invited you to join {{workspaceName}} on Сборитм",
-    preview: "You're invited to {{workspaceName}} on Сборитм",
+    subject: "{{inviterName}} invited you to join {{workspaceName}} on Маяк",
+    preview: "You're invited to {{workspaceName}} on Маяк",
     title: "Join {{workspaceName}}",
     subtitle:
-      "{{inviterName}} ({{inviterEmail}}) invited you to collaborate in Сборитм.",
+      "{{inviterName}} ({{inviterEmail}}) invited you to collaborate in Маяк.",
     cta: "Accept invitation",
     sameEmail: "You can accept with the same email that received this message.",
     ignore: "If this wasn't expected, you can safely ignore this email.",
-    footer: "Сборитм workspace invitation",
+    footer: "Маяк workspace invitation",
   },
 } as WorkspaceInvitationEmailProps;
 
